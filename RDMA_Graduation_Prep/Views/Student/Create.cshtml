@@ -1,0 +1,33 @@
+﻿@model RDMA_Graduation_Prep.Models.Student
+
+@{
+    ViewData["Title"] = "Create Student";
+}
+
+<h2>Add a New Student</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>First Name</label>
+        <input asp-for="FirstName" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input asp-for="LastName" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Class Name</label>
+        <input asp-for="ClassName" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Current Belt</label>
+        <input asp-for="CurrentBelt" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Stripe Count</label>
+        <input asp-for="StripeCount" class="form-control" type="number" min="0" max="3" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+<a asp-action="Index">Back to List</a>

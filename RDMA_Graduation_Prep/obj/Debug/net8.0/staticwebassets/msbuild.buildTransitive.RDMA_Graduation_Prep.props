@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RDMA_Graduation_Prep.props" />
+</Project>
